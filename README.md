@@ -2,11 +2,11 @@
 ### (KDT Training Final Project)
 ---
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aeb15b20-d0f6-4ec1-9fc6-aeae4ccb2757" width="200" height="100"/>
+  <img width="300" height="600" alt="App logo" src="https://github.com/user-attachments/assets/96badb1a-0213-40f4-9ae9-52af149d9266" />
 </p>
 
 <p align="center">
-  소중한 동행을 더 오래 이어주는 파라
+  소중한 동행을 더 오래 이어주는 파라솔
 </p>
 <p align="center">
   <strong>Multi-Modal Digital Biomarker 기반 Parkinson's Disease(파킨슨병)의 초기 감별 AI 솔루션</strong>
@@ -22,10 +22,10 @@
     <th style="padding: 10px; font-size: 16px;">📱 윤현수</th>
   </tr>
   <tr>
-    <td align="center" style="padding: 10px; font-size: 14px;"><strong>데이터 전처리 &<br> API 구현</strong></td>
-    <td align="center" style="padding: 10px; font-size: 14px;"><strong>APP 개발</strong></td>
-    <td align="center" style="padding: 10px; font-size: 14px;"><strong>기획 & <br>UI 디자인</strong></td>
-    <td align="center" style="padding: 10px; font-size: 14px;"><strong>데이터 시각화</strong></td>
+    <td align="center" style="padding: 10px; font-size: 14px;"><strong>챗봇 구현 &<br> 솔루션 기획</strong></td>
+    <td align="center" style="padding: 10px; font-size: 14px;"><strong>UI&UX 디자인 <br>& 솔루션 기획</strong></td>
+    <td align="center" style="padding: 10px; font-size: 14px;"><strong>AI 모델링 & <br>데이터 분석</strong></td>
+    <td align="center" style="padding: 10px; font-size: 14px;"><strong>앱 개발 & <br>AWS Architect</strong></td>
   </tr>
 </table>
 
@@ -34,90 +34,105 @@
 
 <table>
   <tr>
-    <th align="left"> 백엔드</th>
+    <th align="left">개발 환경</th>
     <td>
-      <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python"/>
-      <img src="https://img.shields.io/badge/FastAPI-0.115.12-00C7B7?logo=fastapi"/>
-      <img src="https://img.shields.io/badge/Uvicorn-0.34.2-000000?logo=uvicorn&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Render-Deployed-4a4a4a?logo=render&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Python-3.9.7-3776AB?logo=python&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Flutter-3.32.8-02569B?logo=flutter"/>
+      <img src="https://img.shields.io/badge/Dart-3.8.1-0175C2?logo=dart"/>
+      <img src="https://img.shields.io/badge/Android_Studio-Narwhal_3-3DDC84?logo=androidstudio"/>
     </td>
   </tr>
   <tr>
-    <th align="left"> 데이터 처리 / ML</th>
+    <th align="left">백엔드</th>
     <td>
-      <img src="https://img.shields.io/badge/Pandas-2.2.3-150458?logo=pandas&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Numpy-2.2.5-013243?logo=numpy&logoColor=white"/>
-      <img src="https://img.shields.io/badge/scikit--learn-1.6.1-F7931E?logo=scikitlearn"/>
-      <img src="https://img.shields.io/badge/Konlpy-0.6.0-00CED1"/>
-      <img src="https://img.shields.io/badge/Jamo-0.4.1-FF69B4"/>
-      <img src="https://img.shields.io/badge/Rapidfuzz-3.13.0-820AD1"/>
+      <img src="https://img.shields.io/badge/python--multipart-0.0.9-4a4a4a"/>
+      <img src="https://img.shields.io/badge/Pydantic-2.7.4-005571?logo=pydantic"/>
     </td>
   </tr>
   <tr>
-    <th align="left"> 클라우드 / DB</th>
+    <th align="left">Data Preprocessing / ML</th>
     <td>
-      <img src="https://img.shields.io/badge/Firebase_Admin-6.1.0-FFCA28?logo=firebase"/>
-      <img src="https://img.shields.io/badge/Firestore-2.13.1-FFCA28?logo=googlecloud"/>
+      <!-- Server side (requirements.txt) -->
+      <img src="https://img.shields.io/badge/Pandas-2.2.2-150458?logo=pandas&logoColor=white"/>
+      <img src="https://img.shields.io/badge/NumPy-1.26.4-013243?logo=numpy&logoColor=white"/>
+      <img src="https://img.shields.io/badge/SciPy-1.13.1-8CAAE6?logo=scipy&logoColor=white"/>
+      <img src="https://img.shields.io/badge/scikit--learn-1.5.1-F7931E?logo=scikitlearn"/>
+      <img src="https://img.shields.io/badge/PyTorch-2.3.1-ee4c2c?logo=pytorch&logoColor=white"/>
+      <img src="https://img.shields.io/badge/librosa-0.10.2.post1-1A1A1A"/>
+      <img src="https://img.shields.io/badge/SoundFile-0.12.1-1A1A1A"/>
+      <!-- Lambda (PROJECT_REQUIREMENTS.md) -->
+      <img src="https://img.shields.io/badge/PyTorch(Lambda)-2.1.0-ee4c2c?logo=pytorch&logoColor=white"/>
+      <img src="https://img.shields.io/badge/torchaudio-2.1.0-1A1A1A"/>
+      <img src="https://img.shields.io/badge/librosa(Lambda)-0.10.1-1A1A1A"/>
+      <img src="https://img.shields.io/badge/SoundFile(Lambda)-1.0.0-1A1A1A"/>
+      <img src="https://img.shields.io/badge/scikit--learn(Lambda)-1.3.0-F7931E?logo=scikitlearn"/>
     </td>
   </tr>
   <tr>
-    <th align="left"> 앱 개발</th>
+    <th align="left">클라우드 / DB</th>
     <td>
-      <img src="https://img.shields.io/badge/Flutter-3.22.0-02569B?logo=flutter"/>
-      <img src="https://img.shields.io/badge/Dart-3.3.3-0175C2?logo=dart"/>
-      <img src="https://img.shields.io/badge/Android_Studio-Meerkat-3DDC84?logo=androidstudio"/>
+      <img src="https://img.shields.io/badge/Firebase_Admin-6.5.0-FFCA28?logo=firebase"/>
+      <img src="https://img.shields.io/badge/boto3-%3E%3D1.34.0-232F3E?logo=awslambda&logoColor=white"/>
+      <img src="https://img.shields.io/badge/botocore-%3E%3D1.34.0-232F3E?logo=amazonaws&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Requests-%3E%3D2.31.0-4A4A4A"/>
+    </td>
+  </tr>
+  <tr>
+  <th align="left">컴퓨터 비전</th>
+    <td>
+      <img src="https://img.shields.io/badge/OpenCV(headless)-4.9.0.80-5C3EE8?logo=opencv&logoColor=white"/>
+      <img src="https://img.shields.io/badge/MediaPipe-0.10.7-1A73E8?logo=google&logoColor=white"/>
+      <!-- Lambda alt versions -->
+      <img src="https://img.shields.io/badge/OpenCV(headless)(Lambda)-4.8.1.78-5C3EE8?logo=opencv&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Pillow-%3E%3D10.0.1-1A1A1A"/>
     </td>
   </tr>
 </table>
 
 ## ✨ 프로젝트 주요 기능
 
-### 🔍 제품 검색  
-> 다양한 제품을 검색할 수 있는 기능을 제공합니다.  
-> 카테고리, 브랜드, 제품명을 기준으로 탐색할 수 있어요!
+### 🔍 주요 바이오마커
+> 특발성 파킨슨병(PD), 비정형 파킨슨병(PSP, MSA), 정상(HC)을 구분할 수 있는 마커 입니다.<br>
+> 시선 추적(PSP), 손가락 부딪치기(PD), 소리내기(MSA) 기준으로 탐색할 수 있어요.
 <div align="center">
 
 <table>
   <tr>
-    <th align="center">제품명 검색</th>
-    <th align="center">카테고리 탐색</th>
-    <th align="center">브랜드관 탐색</th>
+    <th align="center">시선 추적</th>
+    <th align="center">손가락 부딪치기</th>
+    <th align="center">소리내기</th>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/6ad35124-25e8-42e2-904e-4e7a2191cd19" width="200"/>
+      <img src="https://github.com/user-attachments/assets/53fb25bf-cd5c-4f9b-9227-1fe31160ecc9" width="200"/>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/5c29d2e4-121d-4347-8a70-74c59148785a" width="200"/>
+      <img src="https://github.com/user-attachments/assets/30e747c4-f72d-4be8-b7ef-9aec7a950128" width="200"/>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/243d2ab1-de2c-4c1b-98a5-0344260cc9e8" width="200"/>
+      <img src="https://github.com/user-attachments/assets/ee3ddd03-e118-434d-997f-890023787297" width="200"/>
     </td>
   </tr>
 </table>
 
 </div>
 
-### 🧪 감미료 성분 분석
-> 찾은 제품의 감미료 성분 정보를 탐색하고, 더 건강한 대체 제품을 추천 받아 보세요!
-
+### 🧪 결과 보고서 & 아파닥
+> 모든 측정 결과를 고려한 결과 보고서를 제공 받고<br>
+> RAG(Retrieval-Augmented Generation)기반 파킨슨병(비정형 파킨슨병) 특화 챗봇과 함께 해보세요!
 <div align="center">
 
 <table>
   <tr>
-    <th align="center">감미료 분류 정보</th>
-    <th align="center">영양성분 표</th>
-    <th align="center">대체제품 추천</th>
+    <th align="center">최종 위험도 보고서</th>
+    <th align="center">아파닥</th>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/6311c116-d378-49e2-b375-f64af89028cb" width="200"/>
+      <img src="https://github.com/user-attachments/assets/2f0aba69-e079-4607-9970-8fb5d26cfdee" width="200"/>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/96519267-8d4f-4c67-9ea0-4fcb36679e2a" width="200"/>
-    </td>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/623c8f0c-1827-4140-af24-bbb69786f5fc" width="200"/>
+      <img src="https://github.com/user-attachments/assets/8f96d860-7ba2-4e8e-8db3-a09397b0dd8d" width="200"/>
     </td>
   </tr>
 </table>
