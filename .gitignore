@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+*.log
+
+# Jupyter / cache
+.ipynb_checkpoints/
+*.cache/
+
+# VSCode / Windows
+.vscode/
+Thumbs.db
+Desktop.ini
+
+# Build / temp
+build/
+dist/
+*.tmp
+*.bak
+
+# Data & Large
+DATA/
+data/
+*.wav
+*.mp4
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.pt
+*.pth
+*.onnx
+*.pkl
