@@ -139,31 +139,31 @@
 
 </div>
 
-## 🔧 아키텍처 다이어그램
-
+## ☁️AWS Cloud Architecture
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0a12bfff-dec4-4a52-bad2-9afc72c52353" alt="architecture-diagram" width="700"/>
+  <img width="700" height="862" alt="architecture-diagram" src="https://github.com/user-attachments/assets/cb17e6c7-6a5b-4731-bf0e-38564dcc1af6" />
 </p>
 
-> 전체 시스템은 **3-Tier 구조 기반의 경량 아키텍처**입니다.  
- - 빠른 응답성과 구조 단순화를 위해 3-Tier를 개조하여 경량화했습니다.  
- - 별도의 Service Layer 없이, API 내부에서 모든 로직을 직접 처리하도록 구성했습니다.
-
-> **Firebase**를 데이터 저장소로, **FastAPI**를 중심으로 검색 / 분류 / 추천 기능을 제공합니다.  
- - 제품 데이터는 Firebase에 상세 필드를 모두 포함한 형태로 업로드되어 있습니다.  
- - 데이터베이스는 복잡한 관계형 구조를 지양하고, 단순성과 명확성을 우선했습니다.
-
+> App에서 제공하는 모든 핵심 기능은 **AWS cloud platform** 을 사용했습니다.  
+ - 시선 추적, 손가락 부딪치기, 음성 분석 데이터 수집은 **AWS Lambda**를 활용했습니다.
+ - 로그인, 데이터 저장, 모델 적용은 **AWS SQS**를 통해 수행합니다.
+ - 수집된 데이터(음성, 손가락 부딪치기, 시선 추적) 및 결과 보고서는 **DynamoDB**에 저장되어 관리됩니다.
+   
 > 앱은 **Flutter + Dart**로 개발되어 사용자 인터페이스를 담당합니다.
+
+## 🔧 파킨슨 멀티모달 파이프라인
+<p align="center">
+  <img width="700" height="862" alt="architecture-diagram" src="https://github.com/user-attachments/assets/f8f5bbda-2f2f-4a24-a2b2-cb33c6f9ffe8" />
+</p>
+
+> 파킨슨병의 정확한 분류를 위해 **3개의 핵심 Feature를 모두 고려하여 분류**합니다.  
+ - 시선 추적, 손가락 부딪치기 데이터 수집 및 추출에는 **Mediapipe** 라이브러리를 활용했습니다.
+ - 음성 분석 모델은 3개의 Machine Learning 모델 구조를 병합한 Multi-Branch Model 구조입니다.
 
 ## 🛠️ My Work
 
-### Search 로직 구현
-- `rapidfuzz`를 활용하여 **오타/유사어 검색** 기능을 구현했습니다.
-- 예: `롯데 → lotte`, `비비고 → bibigo` 등 한/영 브랜드 자동 매핑으로 **검색 편의성 강화**
-- 유사도 기준이 높아 검색 실패 시 **조건을 자동 완화하는 Fallback 재검색 기능**을 추가했습니다.
-- `자모 유사 검색` 로직을 통해 `"콜라 → 코카콜라"`, `"비비드" ↔ "vividkitchen"` 등도 매칭 가능하도록 설계했습니다.
-
-### 제품 추천 기능
-- **TF-IDF 기반 가중치 추천 알고리즘**을 직접 구현하였습니다.
-- 원재료 성분 중 `감미료`, `주의 성분`의 포함 여부를 기반으로 가중치를 부여해 추천 점수를 계산합니다.
-- 원재료 표 상에서 위험 성분의 위치가 **상위**일 경우 감점, **하위**일 경우 가점을 부여하여 보다 안전한 제품을 추천합니다.
+### 음성 모델 구현
+- CNN + BiGRU + MLP 로 구성된 Multi-Branch Model로 구현했습니다.
+- **CNN Branch - 시간-주파수 패턴 학습, BiGRU - 시간 흐름(발성 주기)양방향 요약, 음성 피치/에너지 등 요약 통계를 보완 특징으로 사용**
+- 해당 구성을 통해 CNN, RNN, MLP가 서로 다른 단서를 학습(공간 패턴, 시간 동역햑, 요약 통계)하여 **단일 브랜치 대비 견고성과 분별력이 향상**됩니다.
+- 최종 결과는 2-Layer MLP구조를 가진 분류 헤드를 통해 2가지의 유형(HC, MSA)군을 분류합니다.
